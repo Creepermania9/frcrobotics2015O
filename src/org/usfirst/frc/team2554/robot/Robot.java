@@ -46,8 +46,13 @@ public class Robot extends IterativeRobot {
     /**
      * This function is called periodically during autonomous
      */
+     int count = 100;
     public void autonomousPeriodic() {
-
+    	if(count > 0)
+    	{
+    		count--;
+    		mainDrive.DriveAuto();
+    	}
     }
 
     /**
