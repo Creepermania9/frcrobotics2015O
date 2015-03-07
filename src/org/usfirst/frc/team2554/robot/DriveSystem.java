@@ -39,6 +39,10 @@ public class DriveSystem {
     	drive.mecanumDrive_Polar(magnitude, direction, rotation);
 	}
 	
+	public void DriveAuto() {
+		drive.mecanumDrive_Polar(0.2, 90, 0);
+	}
+	
 	public void DriveCartesian() {
 		
 	}
